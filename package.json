@@ -1,0 +1,29 @@
+{
+  "name": "lazuli",
+  "version": "1.0.0",
+  "description": "Minecraft Mod Installer",
+  "main": "index.js",
+  "bin": {
+    "lazuli": "./bin/lazuli"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krues8dr/lazuli.git"
+  },
+  "author": "krues8dr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krues8dr/lazuli/issues"
+  },
+  "homepage": "https://github.com/krues8dr/lazuli#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.1",
+    "commander": "^2.9.0",
+    "progress": "^2.0.0",
+    "request": "^2.81.0",
+    "request-progress": "^3.0.0"
+  }
+}
