@@ -7,9 +7,6 @@ module.exports = function installCommand(program) {
 		.command('install [mods...]')
 		.description('Install one or more mods.')
 		.action(function(mods, command) {
-			console.log('command: ' + command);
-			console.log('Mods', mods);
-
 			var repo = new CurseforgeRepository({});
 
 			for(var i = 0; i < mods.length; i++) {

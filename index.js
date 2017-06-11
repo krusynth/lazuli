@@ -2,8 +2,8 @@
 
 const program = require('commander');
 
-var commands = require('./commands')(program);
-var packageJson = require('./package.json');
+const commands = require('./commands')(program);
+const packageJson = require('./package.json');
 
 program
   .version(packageJson.version)
@@ -11,5 +11,5 @@ program
   // .option('-m, --more','we can have as many options as we want')
   // .option('-i, --input [optional]','optional user input')
   // .option('-I, --another-input <required>','required user input')
-  .command('install [name]', 'install one or more packages')
+	.usage('<command> [options]')
   .parse(process.argv);
