@@ -5,7 +5,7 @@ module.exports = function installCommand(program) {
 
 	program
 		.command('install [mods...]')
-		.description('Install one or more mods. If a list isn\'t given, installs from lazuli.json')
+		.description('Install one or more mods.')
 		.action(function(mods, command) {
 			console.log('command: ' + command);
 			console.log('Mods', mods);
