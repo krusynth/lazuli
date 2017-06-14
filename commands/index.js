@@ -18,6 +18,13 @@ module.exports = function commandLoader(program) {
     // Require command
     var command = require(path.join(loadPath, filename));
 
+    var configFile = path.join(process.cwd(), 'lazuli.config');
+
+    if(program.config) {
+       configFile = program.config;
+    }
+    program.conf = require(configFile);
+
     // Initialize command
     commands[name] = command(program);
   });

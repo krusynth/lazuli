@@ -1,19 +1,34 @@
 var CurseforgeRepository = require('../lib/curseforgeRepository');
 
 module.exports = function installCommand(program) {
-	'use strict';
+  'use strict';
 
-	program
-		.command('install [mods...]')
-		.description('Install one or more mods.')
-		.action(function(mods, command) {
-			var repo = new CurseforgeRepository({});
+  program
+    .command('install [mods...]')
+    .description('Install one or more mods.')
+    .action(function(args, command) {
+      var repo = new CurseforgeRepository(program.conf);
 
-			for(var i = 0; i < mods.length; i++) {
-				var mod = mods[i];
+      var options = program.opts();
 
-				repo.get(mod);
-			}
-		});
+      var mods = {};
+      if(args && args.length > 0) {
+        for(var i = 0; i < args.length; i++) {
+          var arg = args[i];
+          mods[arg] = options.modversion || '*';
+        }
+      }
+      else if(program.conf.mods) {
+        mods = program.conf.mods;
+      }
+
+      if(mods && Object.keys(mods).length > 0) {
+        for(var mod in mods) {
+          var version = mods[mod];
+
+          repo.get(mod, version, options.mcversion, options.release);
+        }
+      }
+    });
 
 };
