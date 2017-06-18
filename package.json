@@ -20,10 +20,12 @@
   },
   "homepage": "https://github.com/krues8dr/lazuli#readme",
   "dependencies": {
+    "axios": "^0.16.2",
     "cheerio": "^1.0.0-rc.1",
     "commander": "^2.9.0",
-    "progress": "^2.0.0",
-    "request": "^2.81.0",
-    "request-progress": "^3.0.0"
+    "mz": "^2.6.0"
+  },
+  "engines": {
+    "node": ">= 7.6.0"
   }
 }

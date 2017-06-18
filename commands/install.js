@@ -7,15 +7,16 @@ module.exports = function installCommand(program) {
     .command('install [mods...]')
     .description('Install one or more mods.')
     .action(function(args, command) {
-      var repo = new CurseforgeRepository(program.conf);
+      // Merge our command line arguments to override our config file.
+      let options = Object.assign(program.conf,
+        // Remove undefined options using the JSON twiddle.
+        JSON.parse(JSON.stringify(program.opts())));
 
-      var options = program.opts();
-
-      var mods = {};
+      let mods = {};
       if(args && args.length > 0) {
-        for(var i = 0; i < args.length; i++) {
-          var arg = args[i];
-          mods[arg] = options.modversion || '*';
+        let modversion = options.modversion || '*';
+        for(let arg of args) {
+          mods[arg] = modversion;
         }
       }
       else if(program.conf.mods) {
@@ -23,11 +24,18 @@ module.exports = function installCommand(program) {
       }
 
       if(mods && Object.keys(mods).length > 0) {
-        for(var mod in mods) {
-          var version = mods[mod];
-
-          repo.get(mod, version, options.mcversion, options.release);
-        }
+        let repo = new CurseforgeRepository(options);
+        repo.setup().then( () => {
+          for(let [mod, version] of Object.entries(mods)) {
+              repo.get(mod, version)
+                .then(() => {
+                  console.log(`Installed ${mod}`);
+                })
+                .catch((err) => {
+                  console.warn(err);
+                });
+          }
+        });
       }
     });
 
