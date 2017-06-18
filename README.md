@@ -5,6 +5,8 @@ Currently only supports downloads from CurseForge.
 
 ## Installation
 
+**Requires Node >= 7.6.0**
+
 1. Install dependencies with `npm install`
 2. Add to your executable path with `npm link`
 
