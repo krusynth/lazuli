@@ -27,13 +27,13 @@ module.exports = function installCommand(program) {
         let repo = new CurseforgeRepository(options);
         repo.setup().then( () => {
           for(let [mod, version] of Object.entries(mods)) {
-              repo.get(mod, version)
-                .then(() => {
-                  console.log(`Installed ${mod}`);
-                })
-                .catch((err) => {
-                  console.warn(err);
-                });
+            repo.get(mod, version)
+              .then(() => {
+                console.log(`Installed ${mod}`);
+              })
+              .catch((err) => {
+                console.warn(err);
+              });
           }
         });
       }
