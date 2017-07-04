@@ -6,5 +6,5 @@
 		"thaumcraft": "*",
 		"buildcraft": "*"
 	},
-  "maxretries": 10
+  "maxpages": 5
 }
