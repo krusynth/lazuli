@@ -28,8 +28,8 @@ module.exports = function installCommand(program) {
         repo.setup().then( () => {
           for(let [mod, version] of Object.entries(mods)) {
             repo.get(mod, version)
-              .then(() => {
-                console.log(`Installed ${mod}`);
+              .then((modDetails) => {
+                console.log(`Installed ${mod} (${modDetails.release} ${modDetails.version})`);
               })
               .catch((err) => {
                 console.warn(err);
