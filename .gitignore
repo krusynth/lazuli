@@ -41,6 +41,7 @@ typings/
 
 # Optional npm cache directory
 .npm
+package-lock.json
 
 # Optional eslint cache
 .eslintcache
@@ -53,11 +54,17 @@ typings/
 
 # Yarn Integrity file
 .yarn-integrity
+yarn.lock
 
 # dotenv environment variables file
 .env
+
+# flow config
+.flowconfig
 
 # Locally installed mods
 mods/
 lazuli.config.json
 lazuli.config.js
+lazuli.config.json5
+lazuli.lock.json

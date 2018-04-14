@@ -2,6 +2,7 @@
 
 var fs = require('fs');
 var path = require('path');
+require('json5/lib/register')
 
 module.exports = function commandLoader(program) {
   'use strict';
