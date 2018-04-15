@@ -1,6 +1,7 @@
 'use strict';
 
 const CurseforgeRepository = require('../lib/curseforgeRepository');
+const Config = require('../lib/config');
 
 module.exports = function installCommand(program) {
 
@@ -8,12 +9,7 @@ module.exports = function installCommand(program) {
     .command('install [mods ...]')
     .description('Install one or more mods.')
     .action((args, command) => {
-      // Merge our command line arguments to override our config file.
-      let options = Object.assign({}, program.conf,
-        // Remove undefined options using the JSON twiddle.
-        JSON.parse(JSON.stringify(program.opts())));
-      options.version = program.opts().version;
-      options.lazuliVersion = program.conf.version;
+      let options = Config(program);
 
       let mods = {};
       if(args && args.length > 0) {
@@ -27,17 +23,17 @@ module.exports = function installCommand(program) {
       }
 
       if(mods && Object.keys(mods).length > 0) {
+        // Todo: allow multiple repos for mods.
         let repo = new CurseforgeRepository(options);
         repo.setup().then( () => {
           for(let [mod, version] of Object.entries(mods)) {
             repo.get(mod, version)
               .then((modDetails) => {
                 console.log(`Installed ${mod} (${modDetails.release} ${modDetails.version})`);
-
                 repo.updateLockfile(modDetails);
               })
               .catch((err) => {
-                console.warn(err);
+                console.warn(`Unable to install ${mod} ${version}`);
               });
           }
         });
