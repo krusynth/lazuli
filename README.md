@@ -1,7 +1,7 @@
 # lazuli
 Command line mod installer &amp; manager for Minecraft.
 
-Currently only supports downloads from CurseForge.
+Note: Currently only supports mods downloaded from CurseForge.
 
 ## Installation
 
@@ -19,4 +19,6 @@ in the url from CurseForge (e.g., `buildcraft`, `tinkers-construct`,
 
 You can create a `lazuli.config.json` file to list the mods you want to include,
 as well as to specify the version of minecraft and give your modpack a name and
-version.
+version. [See the example for details.](lazuli.config.json.example) This file
+can also be a javascript file (.js) or a JSON5 file (.json5). Running `lazuli
+install` will then install all of the mods in your config file.

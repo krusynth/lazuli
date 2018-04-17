@@ -5,6 +5,9 @@ const program = require('commander');
 const commands = require('./commands')(program);
 const packageJson = require('./package.json');
 
+const colors = require('colors');
+
+
 program
   .version(packageJson.version)
   // .option('-o, --option','option description')

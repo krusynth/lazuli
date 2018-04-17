@@ -10,6 +10,7 @@ module.exports = function installCommand(program) {
     .description('Install one or more mods.')
     .action((args, command) => {
       let options = Config(program);
+      let repo = new CurseforgeRepository(options);
 
       let mods = {};
       if(args && args.length > 0) {
@@ -22,21 +23,28 @@ module.exports = function installCommand(program) {
         mods = program.conf.mods;
       }
 
+      if(mods && (!args || args.length === 0)) {
+        // If we're installing from scratch, remove the old lockfile.
+        repo.clearLockfile();
+      }
+
       if(mods && Object.keys(mods).length > 0) {
         // Todo: allow multiple repos for mods.
-        let repo = new CurseforgeRepository(options);
         repo.setup().then( () => {
           for(let [mod, version] of Object.entries(mods)) {
             repo.get(mod, version)
               .then((modDetails) => {
-                console.log(`Installed ${mod} (${modDetails.release} ${modDetails.version})`);
+                console.log(`Installed ${mod} (${modDetails.release} ${modDetails.version})`.green);
                 repo.updateLockfile(modDetails);
               })
               .catch((err) => {
-                console.warn(`Unable to install ${mod} ${version}`);
+                console.warn(`Error: Unable to install ${mod} ${version}`.red.bold);
               });
           }
-        });
+        })
+        .catch((err) => {
+          console.warn(err.red.bold);
+        });;
       }
     });
 

@@ -21,12 +21,15 @@
   "homepage": "https://github.com/krues8dr/lazuli#readme",
   "dependencies": {
     "axios": "^0.16.2",
-    "cheerio": "^1.0.0-rc.1",
-    "commander": "^2.9.0",
+    "cheerio": "^1.0.0-rc.2",
+    "colors": "^1.2.1",
+    "commander": "^2.15.1",
     "glob": "^7.1.2",
     "json5": "^1.0.1",
-    "mz": "^2.6.0",
-    "thenify": "^3.3.0"
+    "mz": "^2.7.0",
+    "ncp": "^2.0.0",
+    "thenify": "^3.3.0",
+    "zip-folder": "^1.0.0"
   },
   "engines": {
     "node": ">= 7.6.0"

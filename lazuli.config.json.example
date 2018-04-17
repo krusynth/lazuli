@@ -1,12 +1,11 @@
 {
 	"name": "mymodpack",
 	"version": "1.0.0",
-	"mcversion": "1.7.10",
+	"mcversion": "1.12.2",
 	"release": "stable",
 	"mods": {
 		"tinkers-construct": "*",
-		"thaumcraft": "*",
-		"buildcraft": "*"
+		"buildcraft": "alpha"
 	},
   "maxpages": 5
 }
