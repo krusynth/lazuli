@@ -69,3 +69,7 @@ lazuli.config.js
 lazuli.config.json5
 lazuli.lock.json
 build/
+
+# Project files
+*.sublime-project
+*.sublime-workspace

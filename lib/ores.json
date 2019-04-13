@@ -1,0 +1,159 @@
+{
+"default": "minecraft",
+"ores": {
+	"applied-energistics-2": {
+		"quartz": "appliedenergistics2:tile.OreQuartz",
+		"charged quartz": "appliedenergistics2:tile.OreQuartzCharged"
+	},
+	"artifice": {
+		"basalt": "Artifice:tile.artifice.basalt",
+		"marble": "Artifice:tile.artifice.marble"
+	},
+	"Big Reactors": {
+		"yellorite": "BigReactors:YelloriteOre"
+	},
+	"biomes-o-plenty": {
+		"biome essence": "BiomesOPlenty:biomeBlock",
+		"ender amethyst": "BiomesOPlenty:gemOre",
+		"ruby": "BiomesOPlenty:gemOre:2",
+		"peridot": "BiomesOPlenty:gemOre:4",
+		"topaz": "BiomesOPlenty:gemOre:6",
+		"tanzanite": "BiomesOPlenty:gemOre:8",
+		"malachite": "BiomesOPlenty:gemOre:10",
+		"sapphire": "BiomesOPlenty:gemOre:12",
+		"amber": "BiomesOPlenty:gemOre:14"
+	},
+	"chisel": {
+		"marble": "chisel:chisel.marble",
+		"limestone": "chisel:chisel.limestone"
+	},
+	"forestry": {
+		"apatite": "Forestry:resources",
+		"copper": "Forestry:resources:1",
+		"tin": "Forestry:resources:2"
+	},
+	"galacticraft": {
+		"copper": "GalacticraftCore:tile.gcBlockCore:5",
+		"tin": "GalacticraftCore:tile.gcBlockCore:6",
+		"aluminum": "GalacticraftCore:tile.gcBlockCore:7",
+		"silicon": "GalacticraftCore:tile.gcBlockCore:8",
+		"moon copper": "GalacticraftCore:tile.moonBlock",
+		"moon tin": "GalacticraftCore:tile.moonBlock:1",
+		"moon cheese": "GalacticraftCore:tile.moonBlock:2",
+		"mars copper": "GalacticraftMars:tile.mars",
+		"mars tin": "GalacticraftMars:tile.mars:1",
+		"mars desh": "GalacticraftMars:tile.mars:2",
+		"mars iron": "GalacticraftMars:tile.mars:3",
+		"asteroid aluminum": "GalacticraftMars:tile.asteroidsBlock:3",
+		"asteroid titanium": "GalacticraftMars:tile.asteroidsBlock:4",
+		"asteroid iron": "GalacticraftMars:tile.asteroidsBlock:5"
+	},
+	"mekanism": {
+		"osmium": "Mekanism:OreBlock",
+		"copper": "Mekanism:OreBlock:1",
+		"tin": "Mekanism:OreBlock:2"
+	},
+	"minecraft": {
+		"coal": "minecraft:coal_ore",
+		"lapis Lazuli": "minecraft:lapis_ore",
+		"diamond": "minecraft:diamond_ore",
+		"redstone": "minecraft:redstone_ore",
+		"emerald": "minecraft:emerald_ore",
+		"nether quartz": "minecraft:quartz_ore",
+		"gold": "minecraft:gold_ore",
+		"iron": "minecraft:iron_ore"
+	},
+	"nethers": {
+		"nether coal": "NetherOres:tile.netherores.ore.0",
+		"nether diamond": "NetherOres:tile.netherores.ore.0:1",
+		"nether gold": "NetherOres:tile.netherores.ore.0:2",
+		"nether iron": "NetherOres:tile.netherores.ore.0:3",
+		"nether lapis lazuli": "NetherOres:tile.netherores.ore.0:4",
+		"nether redstone": "NetherOres:tile.netherores.ore.0:5",
+		"nether copper": "NetherOres:tile.netherores.ore.0:6",
+		"nether tin": "NetherOres:tile.netherores.ore.0:7",
+		"nether emerald": "NetherOres:tile.netherores.ore.0:8",
+		"nether silver": "NetherOres:tile.netherores.ore.0:9",
+		"nether lead": "NetherOres:tile.netherores.ore.0:10",
+		"nether uranium": "NetherOres:tile.netherores.ore.0:11",
+		"nether nikolite": "NetherOres:tile.netherores.ore.0:12",
+		"nether ruby": "NetherOres:tile.netherores.ore.0:13",
+		"nether peridot": "NetherOres:tile.netherores.ore.0:14",
+		"nether sapphire": "NetherOres:tile.netherores.ore.0:15",
+		"nether platinum": "NetherOres:tile.netherores.ore.1",
+		"nether ferrous": "NetherOres:tile.netherores.ore.1:1",
+		"nether pig iron": "NetherOres:tile.netherores.ore.1:2",
+		"nether iridium": "NetherOres:tile.netherores.ore.1:3",
+		"nether osmium": "NetherOres:tile.netherores.ore.1:4",
+		"nether sulfur": "NetherOres:tile.netherores.ore.1:5",
+		"nether titanium": "NetherOres:tile.netherores.ore.1:6",
+		"nether mithril": "NetherOres:tile.netherores.ore.1:7",
+		"nether adamantium": "NetherOres:tile.netherores.ore.1:8",
+		"nether rutile": "NetherOres:tile.netherores.ore.1:9",
+		"nether tungsten": "NetherOres:tile.netherores.ore.1:10",
+		"nether amber": "NetherOres:tile.netherores.ore.1:11",
+		"nether tennantite": "NetherOres:tile.netherores.ore.1:12",
+		"nether salt": "NetherOres:tile.netherores.ore.1:13",
+		"nether saltpeter": "NetherOres:tile.netherores.ore.1:14",
+		"nether magnesium": "NetherOres:tile.netherores.ore.1:15"
+	},
+	"flaxbeards-steam-power": {
+		"copper": "Steamcraft:steamcraftOre",
+		"zinc": "Steamcraft:steamcraftOre:1",
+		"poor zinc": "Steamcraft:steamcraftOre:2"
+	},
+	"project-red-base": {
+		"ruby": "ProjRed|Exploration:projectred.exploration.ore",
+		"sapphire": "ProjRed|Exploration:projectred.exploration.ore:1",
+		"peridot": "ProjRed|Exploration:projectred.exploration.ore:2",
+		"marble": "ProjRed|Exploration:projectred.exploration.stone",
+		"basalt": "ProjRed|Exploration:projectred.exploration.stone:3"
+	},
+	"railcraft": {
+		"abyssal stone": "Railcraft:tile.railcraft.cube:6",
+		"quarried stone": "Railcraft:tile.railcraft.cube:7",
+		"sulfur": "Railcraft:tile.railcraft.ore",
+		"saltpeter": "Railcraft:tile.railcraft.ore:1",
+		"dark diamond": "Railcraft:tile.railcraft.ore:2",
+		"dark emerald": "Railcraft:tile.railcraft.ore:3",
+		"dark lapis lazuli": "Railcraft:tile.railcraft.ore:4",
+		"firestone": "Railcraft:tile.railcraft.ore:5",
+		"poor iron": "Railcraft:tile.railcraft.ore:7",
+		"poor gold": "Railcraft:tile.railcraft.ore:8",
+		"poor copper": "Railcraft:tile.railcraft.ore:9",
+		"poor tin": "Railcraft:tile.railcraft.ore:10"
+	},
+	"thaumcraft": {
+		"cinnabar": "Thaumcraft:blockCustomOre",
+		"air crystal": "Thaumcraft:blockCustomOre:1",
+		"fire crystal": "Thaumcraft:blockCustomOre:2",
+		"water crystal": "Thaumcraft:blockCustomOre:3",
+		"earth crystal": "Thaumcraft:blockCustomOre:4",
+		"order crystal": "Thaumcraft:blockCustomOre:5",
+		"entropy crystal": "Thaumcraft:blockCustomOre:6",
+		"amber": "Thaumcraft:blockCustomOre:7"
+	},
+	"thermal-foundation": {
+		"copper": "ThermalFoundation:Ore",
+		"tin": "ThermalFoundation:Ore:1",
+		"silver": "ThermalFoundation:Ore:2",
+		"lead": "ThermalFoundation:Ore:3",
+		"ferrous": "ThermalFoundation:Ore:4",
+		"shiny": "ThermalFoundation:Ore:5",
+		"mana infused": "ThermalFoundation:Ore:6"
+	},
+	"tinkers-construct": {
+		"cobalt": "TConstruct:SearedBrick:1",
+		"ardite": "TConstruct:SearedBrick:2",
+		"copper": "TConstruct:SearedBrick:3",
+		"tin": "TConstruct:SearedBrick:4",
+		"aluminum": "TConstruct:SearedBrick:5",
+		"iron gravel": "TConstruct:GravelOre",
+		"gold gravel": "TConstruct:GravelOre:1",
+		"copper gravel": "TConstruct:GravelOre:2",
+		"tin gravel": "TConstruct:GravelOre:3",
+		"aluminum gravel": "TConstruct:GravelOre:4",
+		"cobalt gravel": "TConstruct:GravelOre:5"
+	}
+}
+}

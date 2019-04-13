@@ -1,4 +1,4 @@
-var CurseforgeRepository = require('../lib/curseforgeRepository');
+
 
 module.exports = function uninstallCommand(program) {
   'use strict';
