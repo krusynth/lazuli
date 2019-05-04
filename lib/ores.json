@@ -53,7 +53,7 @@
     "asteroid titanium": "GalacticraftMars:tile.asteroidsBlock:4",
     "asteroid iron": "GalacticraftMars:tile.asteroidsBlock:5"
   },
-  "ImmersiveEngineering": {
+  "immersive-engineering": {
     "copper": "immersiveengineering:ore:0",
     "alumninum": "immersiveengineering:ore:1",
     "lead": "immersiveengineering:ore:2",
