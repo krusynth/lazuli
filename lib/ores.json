@@ -55,7 +55,7 @@
   },
   "immersive-engineering": {
     "copper": "immersiveengineering:ore:0",
-    "alumninum": "immersiveengineering:ore:1",
+    "aluminum": "immersiveengineering:ore:1",
     "lead": "immersiveengineering:ore:2",
     "silver": "immersiveengineering:ore:3",
     "nickel": "immersiveengineering:ore:4",
@@ -146,8 +146,8 @@
     "tin": "ThermalFoundation:Ore:1",
     "silver": "ThermalFoundation:Ore:2",
     "lead": "ThermalFoundation:Ore:3",
-    "ferrous": "ThermalFoundation:Ore:4",
-    "shiny": "ThermalFoundation:Ore:5",
+    "nickel": "ThermalFoundation:Ore:4",
+    "platinum": "ThermalFoundation:Ore:5",
     "mana infused": "ThermalFoundation:Ore:6"
   },
   "tinkers-construct": {
