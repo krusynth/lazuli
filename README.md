@@ -1,4 +1,7 @@
 # lazuli
+
+![Lazuli](https://raw.githubusercontent.com/wiki/krues8dr/lazuli/img/lazuli.png)
+
 Command line mod installer &amp; manager for Minecraft.
 
 Note: Currently only supports mods downloaded from CurseForge.
