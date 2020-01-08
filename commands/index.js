@@ -27,7 +27,10 @@ module.exports = function commandLoader(program) {
     try {
       program.conf = require(configFile);
     }
-    catch(e) {}
+    catch(e) {
+      console.log('Error', e);
+
+    }
 
     // Initialize command
     commands[name] = command(program);
