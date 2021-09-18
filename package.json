@@ -33,7 +33,9 @@
     "ncp": "^2.0.0",
     "p-limit": "^2.2.1",
     "prompts": "^2.0.4",
-    "puppeteer": "^2.1.1",
+    "puppeteer": "^5.2.1",
+    "puppeteer-extra": "^3.1.13",
+    "puppeteer-extra-plugin-stealth": "^2.5.0",
     "request": "^2.88.0",
     "thenify": "^3.3.0",
     "zip-folder": "^1.0.0"
